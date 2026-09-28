@@ -4,7 +4,7 @@ import { doctor, links } from "@/lib/site";
 
 export function FinalCta() {
   return (
-    <section id="contato" className="bg-cream-soft px-5 pb-8 sm:px-8">
+    <section id="contato" className="scroll-mt-24 bg-cream-soft px-5 pb-8 sm:px-8">
       <Reveal>
         <div className="relative mx-auto max-w-6xl overflow-hidden rounded-[2rem] bg-burgundy px-6 py-14 text-cream-soft sm:px-12 sm:py-16">
           <p className="pointer-events-none absolute -right-6 top-8 hidden font-script text-[8rem] leading-none text-cream-soft/5 sm:block">

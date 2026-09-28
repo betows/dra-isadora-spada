@@ -8,7 +8,7 @@ export function FAQ() {
   const [open, setOpen] = useState<number>(0);
 
   return (
-    <section id="faq" className="bg-cream py-20 sm:py-28">
+    <section id="faq" className="scroll-mt-24 bg-cream py-20 sm:py-28">
       <div className="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.85fr_1.15fr]">
         <Reveal>
           <p className="text-[0.68rem] uppercase tracking-[0.28em] text-gold">

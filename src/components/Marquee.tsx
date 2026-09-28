@@ -13,7 +13,7 @@ export function Marquee() {
   const loop = [...items, ...items];
 
   return (
-    <div className="relative overflow-hidden border-y border-gold/25 bg-burgundy py-3 text-cream-soft">
+    <div className="relative max-w-full overflow-hidden border-y border-gold/25 bg-burgundy py-3 text-cream-soft">
       <div className="marquee-track flex w-max gap-10 whitespace-nowrap">
         {loop.map((item, index) => (
           <span

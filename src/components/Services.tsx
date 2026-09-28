@@ -6,7 +6,7 @@ export function Services() {
   const rest = services.filter((item) => !item.featured);
 
   return (
-    <section id="servicos" className="bg-cream py-20 sm:py-28">
+    <section id="servicos" className="scroll-mt-24 bg-cream py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
           <p className="text-[0.68rem] uppercase tracking-[0.28em] text-gold">
@@ -55,10 +55,18 @@ export function Services() {
           ) : null}
 
           {rest.map((item, index) => (
-            <Reveal key={item.id} delay={0.08 * (index + 1)}>
+            <Reveal
+              key={item.id}
+              delay={0.08 * (index + 1)}
+              className={item.id === "mentoria" ? "lg:col-span-2" : undefined}
+            >
               <article
                 id={item.id === "mentoria" ? "mentoria" : undefined}
-                className="flex h-full flex-col justify-between rounded-[1.6rem] border border-burgundy/10 bg-cream-soft p-7"
+                className={
+                  item.id === "mentoria"
+                    ? "flex h-full w-full scroll-mt-24 flex-col justify-between rounded-[1.6rem] border border-burgundy/10 bg-cream-soft p-7 lg:flex-row lg:items-end lg:justify-between lg:gap-16"
+                    : "flex h-full flex-col justify-between rounded-[1.6rem] border border-burgundy/10 bg-cream-soft p-7"
+                }
               >
                 <div>
                   <p className="text-[0.65rem] uppercase tracking-[0.24em] text-terracotta">

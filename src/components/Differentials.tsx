@@ -3,7 +3,7 @@ import { differentials } from "@/lib/site";
 
 export function Differentials() {
   return (
-    <section id="diferenciais" className="relative overflow-hidden bg-cream-soft py-20 sm:py-28">
+    <section id="diferenciais" className="relative scroll-mt-24 overflow-hidden bg-cream-soft py-20 sm:py-28">
       <div className="gold-rule absolute inset-x-0 top-0" />
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>

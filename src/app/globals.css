@@ -27,9 +27,12 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5.75rem;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   background: var(--cream);
   color: var(--ink);
   font-family: var(--font-sans);
@@ -90,16 +93,12 @@ body {
   animation: blob 18s ease-in-out infinite;
 }
 
-.story-ring {
-  background: conic-gradient(
-    from 210deg,
-    #c45a3a,
-    #e6a317,
-    #f0b429,
-    #d8b8a4,
-    #6e2c3a,
-    #c45a3a
-  );
+.story-row {
+  scrollbar-width: none;
+}
+
+.story-row::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes marquee {

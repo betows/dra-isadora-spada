@@ -3,7 +3,7 @@ import { doctor } from "@/lib/site";
 
 export function About() {
   return (
-    <section id="sobre" className="relative bg-cream-soft py-20 sm:py-28">
+    <section id="sobre" className="relative scroll-mt-24 bg-cream-soft py-20 sm:py-28">
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
           <p className="text-[0.68rem] uppercase tracking-[0.28em] text-gold">
