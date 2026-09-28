@@ -5,7 +5,6 @@ import { FinalCta } from "@/components/FinalCta";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Marquee } from "@/components/Marquee";
 import { Methods } from "@/components/Methods";
 import { MobileDock } from "@/components/MobileDock";
 import { Services } from "@/components/Services";
@@ -22,7 +21,6 @@ export default function Home() {
       <Header />
       <main id="conteudo">
         <Hero />
-        <Marquee />
         <Methods />
         <About />
         <Services />

@@ -3,40 +3,34 @@ import { Reveal } from "@/components/Reveal";
 const methods = [
   {
     name: "LipSense®",
-    role: "Método",
-    text: "Leitura de lábios com identidade — volume, borda e movimento, sem o lábio de catálogo.",
+    text: "Uma leitura de lábios — volume, borda e movimento — sem o gesto de catálogo.",
   },
   {
     name: "Ilumme",
-    role: "Mentoria",
-    text: "Formação e posicionamento para quem atende: técnica, gestão e verdade no consultório.",
+    text: "Mentoria para quem atende: técnica, gestão e um discurso tão autêntico quanto o resultado.",
   },
   {
     name: "SynFace",
-    role: "Protocolo",
-    text: "Planejamento de rosto inteiro — proporção, luz e gesto — a partir da anatomia de cada pessoa.",
+    text: "O rosto inteiro como experiência — proporção, luz e anatomia de cada pessoa.",
   },
 ] as const;
 
 export function Methods() {
   return (
     <section aria-label="Métodos e protocolos" className="bg-ivory">
-      <div className="mx-auto grid max-w-[1440px] md:grid-cols-3">
-        {methods.map((item, index) => (
-          <Reveal key={item.name} delay={index * 0.06}>
-            <article className="border-t border-charcoal/10 px-6 py-14 md:border-r md:px-10 md:py-16 last:md:border-r-0 lg:px-16">
-              <p className="text-[0.62rem] uppercase tracking-[0.26em] text-copper">
-                {item.role}
-              </p>
-              <h2 className="mt-4 font-display text-[clamp(2.1rem,3.4vw,3.15rem)] italic leading-none text-charcoal">
+      <div className="mx-auto max-w-[1520px] px-6 py-24 md:px-10 lg:px-16 lg:py-32">
+        <div className="grid gap-16 border-t border-charcoal/10 pt-16 md:grid-cols-3 md:gap-20">
+          {methods.map((item, index) => (
+            <Reveal key={item.name} delay={index * 0.06}>
+              <p className="font-display text-[clamp(2rem,3.2vw,2.85rem)] italic leading-none text-charcoal">
                 {item.name}
-              </h2>
-              <p className="mt-5 max-w-xs text-sm leading-relaxed text-muted">
+              </p>
+              <p className="mt-6 max-w-xs text-[0.98rem] leading-[1.75] text-muted">
                 {item.text}
               </p>
-            </article>
-          </Reveal>
-        ))}
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );

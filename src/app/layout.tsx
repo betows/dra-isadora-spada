@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Inter } from "next/font/google";
+import { Instrument_Serif, Manrope } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { doctor, seo, SITE_URL } from "@/lib/site";
 import "./globals.css";
@@ -12,9 +12,9 @@ const instrument = Instrument_Serif({
   display: "swap",
 });
 
-const inter = Inter({
+const manrope = Manrope({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-manrope",
   display: "swap",
 });
 
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#F3EEE6",
+  themeColor: "#F7F5F2",
   width: "device-width",
   initialScale: 1,
   colorScheme: "light",
@@ -72,12 +72,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${instrument.variable} ${inter.variable} h-full antialiased`}
+      className={`${instrument.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="relative min-h-full bg-ivory font-sans text-ink">
         <JsonLd />
         {children}
-        <div className="veil" aria-hidden="true" />
       </body>
     </html>
   );

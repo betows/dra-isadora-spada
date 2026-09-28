@@ -15,9 +15,9 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#F3EEE6",
+          background: "#F7F5F2",
           padding: "64px 72px",
-          color: "#12100E",
+          color: "#0E0E0C",
         }}
       >
         <div
@@ -25,9 +25,9 @@ export default function OpenGraphImage() {
             display: "flex",
             justifyContent: "space-between",
             fontSize: 18,
-            letterSpacing: 4,
+            letterSpacing: 5,
             textTransform: "uppercase",
-            color: "#6F6860",
+            color: "#74706B",
           }}
         >
           <span>CRO-SC 18650</span>
@@ -36,27 +36,19 @@ export default function OpenGraphImage() {
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
-              width: 72,
-              height: 1,
-              background: "#B07A52",
-              marginBottom: 28,
-            }}
-          />
-          <div
-            style={{
-              fontSize: 22,
+              fontSize: 20,
               letterSpacing: 5,
               textTransform: "uppercase",
-              color: "#6F6860",
+              color: "#74706B",
             }}
           >
             Dra. Isadora Mór Spada
           </div>
           <div
             style={{
-              marginTop: 16,
-              fontSize: 76,
-              lineHeight: 0.9,
+              marginTop: 18,
+              fontSize: 78,
+              lineHeight: 0.88,
               maxWidth: 920,
             }}
           >
@@ -64,10 +56,10 @@ export default function OpenGraphImage() {
           </div>
           <div
             style={{
-              marginTop: 22,
+              marginTop: 24,
               fontSize: 28,
               fontStyle: "italic",
-              color: "#1A1714",
+              color: "#141412",
             }}
           >
             uma doc autêntica pra rostos autênticos
@@ -77,14 +69,14 @@ export default function OpenGraphImage() {
           style={{
             display: "flex",
             gap: 32,
-            fontSize: 18,
-            letterSpacing: 3,
+            fontSize: 16,
+            letterSpacing: 4,
             textTransform: "uppercase",
-            color: "#B07A52",
+            color: "#C4A090",
           }}
         >
           <span>LipSense®</span>
-          <span>Mentoria Ilumme</span>
+          <span>Ilumme</span>
           <span>SynFace</span>
         </div>
       </div>

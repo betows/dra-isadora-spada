@@ -2,13 +2,12 @@
 
 Landing page de produção para a **Dra. Isadora Mór Spada** (CRO-SC 18650) — harmonização facial, botox, preenchimento e mentoria em Blumenau/SC.
 
-Estética clínica de luxo: ivory e charcoal em seções alternadas, um único acento cobre, Instrument Serif + Inter. Hero com malha Three.js discreta, revelações com Framer Motion e SEO local em PT-BR.
+Estética clínica de luxo: alabaster e charcoal, um acento blush, Instrument Serif + Manrope. Hero full-width com parallax só no bloco de imagem. Um CTA: consulta no WhatsApp. SEO local em PT-BR.
 
 ## Stack
 
 - Next.js 16 (App Router) + TypeScript + Tailwind CSS 4
-- Three.js via `@react-three/fiber` e `@react-three/drei`
-- Framer Motion (scroll reveals + respeito a `prefers-reduced-motion`)
+- Framer Motion (reveals + parallax em placas, com `prefers-reduced-motion`)
 
 ## Desenvolvimento
 
@@ -41,7 +40,7 @@ npm start
 
 ## Acessibilidade de movimento
 
-Se o sistema pede `prefers-reduced-motion: reduce`, o canvas WebGL e as animações pesadas são desligados. O hero cai em um fallback CSS calmo.
+Se o sistema pede `prefers-reduced-motion: reduce`, o parallax das placas e as animações de entrada são desligados.
 
 ## Conteúdo e CTAs
 
