@@ -1,48 +1,64 @@
-import { CtaLink } from "@/components/CtaLink";
 import { doctor, links } from "@/lib/site";
 
 export function Hero() {
   return (
-    <section
-      id="topo"
-      className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-ivory"
-    >
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-[40vh] overflow-hidden lg:hidden">
-        <div className="parallax-drift plate plate-silk h-full w-full" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ivory/20 to-ivory" />
-      </div>
-
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[min(46vw,40rem)] overflow-hidden lg:block">
-        <div className="parallax-drift plate plate-silk h-full w-full" />
-      </div>
-
-      <div className="relative z-10 mx-auto flex w-full max-w-[1520px] flex-1 flex-col justify-end px-6 pb-28 pt-[44vh] md:px-10 lg:justify-center lg:px-16 lg:pb-24 lg:pt-36">
-        <p className="mb-10 text-[0.68rem] uppercase tracking-[0.28em] text-muted lg:mb-14">
-          {doctor.city} · {doctor.stateFull}
-          <span className="mx-4 hidden h-px w-8 bg-copper align-middle sm:inline-block" />
-          <span className="mt-2 block sm:mt-0 sm:inline">{doctor.cro}</span>
-        </p>
-
-        <div className="max-w-[44rem]">
-          <h1 className="font-display text-[clamp(3.4rem,10vw,8rem)] leading-[0.86] tracking-[-0.035em] text-charcoal">
-            Harmonização
-            <span className="block">facial em</span>
-            <span className="block italic">Blumenau</span>
+    <section id="topo" className="bg-paper">
+      <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-10 sm:px-8 sm:py-14 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:py-16">
+        <div>
+          <p className="text-sm font-medium text-coral">
+            {doctor.city}, {doctor.state} · {doctor.cro}
+          </p>
+          <h1 className="mt-3 max-w-xl font-display text-[2.7rem] font-medium leading-[1.02] tracking-tight text-ink sm:text-6xl">
+            Harmonização facial em Blumenau
           </h1>
-
-          <p className="mt-10 max-w-md font-display text-[1.65rem] italic leading-snug text-charcoal/75 sm:text-[1.85rem]">
-            {doctor.tagline}
+          <p className="mt-5 max-w-lg text-base leading-relaxed text-ink/80 sm:text-lg">
+            A {doctor.name} faz botox, preenchimento e harmonização facial em
+            Blumenau. O plano sai da avaliação do seu rosto — com hora marcada
+            pelo WhatsApp.
           </p>
-          <p className="mt-7 max-w-sm text-[1rem] leading-[1.8] text-muted">
-            Dra. Isadora Mór Spada — clínica e mentoria no mesmo olhar. Botox,
-            preenchimento e o Método LipSense® para quem quer parecer consigo
-            mesma.
-          </p>
-
-          <div className="mt-12">
-            <CtaLink href={links.whatsapp}>Consulta no WhatsApp</CtaLink>
+          <div className="mt-7 flex flex-wrap items-center gap-x-6 gap-y-3">
+            <a
+              href={links.whatsapp}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-md bg-coral px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-coral-deep"
+            >
+              Agendar avaliação
+            </a>
+            <a
+              href={links.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-medium text-ink underline decoration-coral/50 underline-offset-4 hover:text-coral"
+            >
+              {doctor.handle}
+            </a>
           </div>
         </div>
+
+        <aside className="rounded-2xl bg-blush p-6 sm:p-8">
+          <p className="font-display text-2xl font-medium text-ink">
+            No consultório
+          </p>
+          <ul className="mt-5 space-y-4 text-sm leading-relaxed text-ink/80">
+            <li>
+              <span className="block font-semibold text-ink">Harmonização facial</span>
+              Proporção, luz e movimento do rosto inteiro.
+            </li>
+            <li>
+              <span className="block font-semibold text-ink">Botox</span>
+              Rugas de expressão, terço superior e sorriso gengival.
+            </li>
+            <li>
+              <span className="block font-semibold text-ink">Preenchimento · LipSense®</span>
+              Lábios, malar, mento e olheiras com ácido hialurônico.
+            </li>
+            <li>
+              <span className="block font-semibold text-ink">Mentoria Ilumme</span>
+              LipSense® e SynFace para profissionais da estética.
+            </li>
+          </ul>
+        </aside>
       </div>
     </section>
   );

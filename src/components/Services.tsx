@@ -1,48 +1,33 @@
-import { Reveal } from "@/components/Reveal";
 import { services } from "@/lib/site";
 
 export function Services() {
   return (
-    <section id="servicos" className="scroll-mt-24 bg-ivory">
-      <div className="mx-auto max-w-[1520px] px-6 py-28 md:px-10 lg:px-16 lg:py-40">
-        <Reveal className="grid gap-12 lg:grid-cols-[1.1fr_0.7fr] lg:items-end">
-          <div>
-            <p className="font-display text-xl italic text-muted">
-              Experiências, não pacotes
-            </p>
-            <h2 className="mt-4 max-w-3xl font-display text-[clamp(2.6rem,5vw,4.8rem)] leading-[0.94] tracking-[-0.025em] text-charcoal">
-              Harmonização, botox, preenchimento e mentoria
-            </h2>
-          </div>
-          <p className="max-w-md text-[1.05rem] leading-[1.8] text-muted">
-            Procedimentos orofaciais em Blumenau e formação para quem atende.
-            Tudo parte da mesma pergunta: o que é autêntico para este rosto —
-            ou para esta carreira?
+    <section id="servicos" className="scroll-mt-20 bg-paper">
+      <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
+        <div className="max-w-2xl">
+          <h2 className="font-display text-4xl font-medium leading-tight tracking-tight text-ink sm:text-5xl">
+            Harmonização, botox, preenchimento e mentoria
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-ink/75">
+            Atendimento orofacial em Blumenau e formação para quem já atende.
+            A indicação sai da consulta, não de um pacote pronto.
           </p>
-        </Reveal>
+        </div>
 
-        <div className="mt-24">
-          {services.map((item, index) => (
-            <Reveal key={item.id} delay={index * 0.04}>
-              <article
-                id={item.id === "mentoria" ? "mentoria" : undefined}
-                className={`grid gap-8 border-t border-charcoal/10 py-14 lg:grid-cols-[minmax(0,0.85fr)_1.15fr] lg:gap-24 lg:py-20 ${
-                  item.id === "mentoria" ? "scroll-mt-24" : ""
-                } ${index === services.length - 1 ? "border-b" : ""}`}
-              >
-                <h3 className="font-display text-[clamp(2rem,3.4vw,3.15rem)] leading-[1.05] text-charcoal">
-                  {item.featured ? `${item.title} em Blumenau` : item.title}
-                </h3>
-                <div className="max-w-xl">
-                  <p className="text-[0.62rem] uppercase tracking-[0.26em] text-muted">
-                    {item.city}
-                  </p>
-                  <p className="mt-5 text-[1.05rem] leading-[1.8] text-muted">
-                    {item.description}
-                  </p>
-                </div>
-              </article>
-            </Reveal>
+        <div className="mt-10 divide-y divide-ink/10 border-y border-ink/10">
+          {services.map((item) => (
+            <article key={item.id} className="grid gap-3 py-7 sm:grid-cols-[14rem_1fr] sm:gap-10 sm:py-8">
+              <h3 className="font-display text-2xl font-medium text-ink sm:text-[1.7rem]">
+                {item.featured ? `${item.title} em Blumenau` : item.title}
+              </h3>
+              <div>
+                <p className="text-sm font-medium text-coral">{item.city}</p>
+                <p className="mt-2 max-w-xl text-base leading-relaxed text-ink/75">
+                  {item.description}
+                </p>
+                <p className="mt-3 text-sm text-muted">{item.points.join(" · ")}</p>
+              </div>
+            </article>
           ))}
         </div>
       </div>

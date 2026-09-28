@@ -1,59 +1,47 @@
 "use client";
 
 import { useState } from "react";
-import { Reveal } from "@/components/Reveal";
 import { faqs } from "@/lib/site";
 
 export function FAQ() {
-  const [open, setOpen] = useState<number>(0);
+  const [open, setOpen] = useState(0);
 
   return (
-    <section id="faq" className="scroll-mt-24 bg-ivory">
-      <div className="mx-auto grid max-w-[1520px] gap-20 px-6 py-28 md:px-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-28 lg:px-16 lg:py-40">
-        <Reveal className="lg:sticky lg:top-32 lg:self-start">
-          <h2 className="font-display text-[clamp(2.6rem,4.8vw,4.6rem)] leading-[0.94] tracking-[-0.025em] text-charcoal">
-            Harmonização facial, botox e mentoria em Blumenau
+    <section id="faq" className="scroll-mt-20 bg-paper">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
+        <div>
+          <h2 className="font-display text-4xl font-medium leading-tight tracking-tight text-ink sm:text-5xl">
+            Dúvidas sobre harmonização facial em Blumenau
           </h2>
-          <p className="mt-8 max-w-md text-[1.05rem] leading-[1.8] text-muted">
-            Respostas para quem pesquisa em Blumenau. Avaliação presencial
-            define indicação — nada aqui substitui consulta.
+          <p className="mt-4 text-base leading-relaxed text-ink/75">
+            Respostas objetivas sobre botox, preenchimento e a Mentoria Ilumme.
+            A avaliação presencial é o que define a indicação.
           </p>
-        </Reveal>
+        </div>
 
-        <div className="border-t border-charcoal/10">
+        <div className="divide-y divide-ink/10 border-y border-ink/10">
           {faqs.map((item, index) => {
             const isOpen = open === index;
             return (
-              <div key={item.q} className="border-b border-charcoal/10">
+              <div key={item.q}>
                 <h3>
                   <button
                     type="button"
                     aria-expanded={isOpen}
-                    className="flex w-full items-start justify-between gap-8 py-7 text-left"
+                    className="flex w-full items-start justify-between gap-6 py-4 text-left"
                     onClick={() => setOpen(isOpen ? -1 : index)}
                   >
-                    <span className="font-display text-[1.35rem] leading-snug text-charcoal sm:text-[1.55rem]">
-                      {item.q}
-                    </span>
-                    <span
-                      aria-hidden="true"
-                      className="mt-1 font-display text-xl leading-none text-muted"
-                    >
+                    <span className="text-base font-medium text-ink sm:text-lg">{item.q}</span>
+                    <span aria-hidden="true" className="text-coral">
                       {isOpen ? "–" : "+"}
                     </span>
                   </button>
                 </h3>
-                <div
-                  className={`grid transition-[grid-template-rows] duration-300 ease-out ${
-                    isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
-                  }`}
-                >
-                  <div className="overflow-hidden">
-                    <p className="pb-7 pr-10 text-[1rem] leading-[1.8] text-muted">
-                      {item.a}
-                    </p>
-                  </div>
-                </div>
+                {isOpen ? (
+                  <p className="pb-4 pr-8 text-sm leading-relaxed text-ink/75 sm:text-base">
+                    {item.a}
+                  </p>
+                ) : null}
               </div>
             );
           })}

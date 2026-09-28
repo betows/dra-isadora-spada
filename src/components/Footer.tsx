@@ -2,38 +2,27 @@ import { doctor, links, nav } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="bg-ivory pb-28 pt-20 sm:pb-14 sm:pt-24">
-      <div className="mx-auto grid max-w-[1520px] gap-16 px-6 md:px-10 lg:grid-cols-[1.5fr_0.7fr_0.8fr] lg:px-16">
+    <footer className="bg-paper pb-24 pt-12 sm:pb-10">
+      <div className="mx-auto grid max-w-6xl gap-8 px-5 sm:px-8 md:grid-cols-3">
         <div>
-          <p className="font-display text-[2rem] leading-none text-charcoal">
-            {doctor.name}
-          </p>
-          <p className="mt-5 max-w-sm font-display text-xl italic text-charcoal/65">
-            {doctor.tagline}
-          </p>
-          <p className="mt-8 text-[0.72rem] uppercase tracking-[0.2em] text-muted">
+          <p className="font-display text-2xl font-medium text-ink">{doctor.name}</p>
+          <p className="mt-2 text-sm text-muted">
             {doctor.city}, {doctor.stateFull} · {doctor.cro}
           </p>
         </div>
-
-        <nav className="flex flex-col gap-3.5" aria-label="Rodapé">
+        <nav className="flex flex-col gap-2 text-sm text-ink/70" aria-label="Rodapé">
           {nav.map((item) => (
-            <a
-              key={item.href}
-              href={item.href}
-              className="text-[0.72rem] uppercase tracking-[0.2em] text-muted transition-colors hover:text-charcoal"
-            >
+            <a key={item.href} href={item.href} className="hover:text-coral">
               {item.label}
             </a>
           ))}
         </nav>
-
-        <div className="flex flex-col gap-3.5">
+        <div className="flex flex-col gap-2 text-sm">
           <a
             href={links.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[0.72rem] uppercase tracking-[0.2em] text-charcoal transition-colors hover:text-copper"
+            className="text-ink hover:text-coral"
           >
             WhatsApp
           </a>
@@ -41,21 +30,19 @@ export function Footer() {
             href={links.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[0.72rem] uppercase tracking-[0.2em] text-muted transition-colors hover:text-charcoal"
+            className="text-ink hover:text-coral"
           >
             {doctor.handle}
           </a>
         </div>
       </div>
-
-      <div className="mx-auto mt-20 max-w-[1520px] border-t border-charcoal/10 px-6 pt-7 md:px-10 lg:px-16">
-        <p className="max-w-3xl text-[0.72rem] leading-relaxed text-muted">
+      <div className="mx-auto mt-10 max-w-6xl border-t border-ink/10 px-5 pt-5 sm:px-8">
+        <p className="max-w-3xl text-xs leading-relaxed text-muted">
           Resultados variam de acordo com anatomia, indicação e cuidados. Conteúdo
-          informativo — não substitui avaliação presencial e não garante
-          resultado específico. {doctor.name}, {doctor.cro}, {doctor.city}/
-          {doctor.state}.
+          informativo — não substitui avaliação presencial e não garante resultado
+          específico. {doctor.name}, {doctor.cro}, {doctor.city}/{doctor.state}.
         </p>
-        <p className="mt-3 text-[0.72rem] text-muted/70">
+        <p className="mt-2 text-xs text-muted/80">
           © {new Date().getFullYear()} {doctor.name}. Todos os direitos reservados.
         </p>
       </div>

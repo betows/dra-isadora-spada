@@ -1,123 +1,58 @@
 @import "tailwindcss";
 
 :root {
-  --ivory: #f7f5f2;
-  --ivory-deep: #f1eeea;
-  --stone: #e8e5e1;
-  --charcoal: #0e0e0c;
-  --charcoal-soft: #161614;
-  --ink: #141412;
-  --muted: #74706b;
-  --copper: #c4a090;
-  --copper-soft: #d0b3a4;
-  --line: rgb(14 14 12 / 0.1);
+  --paper: #fff8f3;
+  --sand: #f6ece4;
+  --blush: #fde8df;
+  --ink: #2a211c;
+  --muted: #746862;
+  --coral: #e36b4f;
+  --coral-deep: #c6533a;
+  --line: rgb(42 33 28 / 0.1);
 }
 
 @theme inline {
-  --color-ivory: var(--ivory);
-  --color-ivory-deep: var(--ivory-deep);
-  --color-stone: var(--stone);
-  --color-charcoal: var(--charcoal);
-  --color-charcoal-soft: var(--charcoal-soft);
+  --color-paper: var(--paper);
+  --color-sand: var(--sand);
+  --color-blush: var(--blush);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
-  --color-copper: var(--copper);
-  --color-copper-soft: var(--copper-soft);
-  --color-line: var(--line);
+  --color-coral: var(--coral);
+  --color-coral-deep: var(--coral-deep);
   --font-sans: var(--font-manrope), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: var(--font-instrument), "Times New Roman", Times, serif;
+  --font-display: var(--font-fraunces), "Iowan Old Style", Palatino, serif;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: 4.75rem;
   overflow-x: hidden;
 }
 
 body {
   overflow-x: hidden;
-  background: var(--ivory);
+  background: var(--paper);
   color: var(--ink);
   font-family: var(--font-sans);
-  font-feature-settings: "ss01", "cv11";
 }
 
 ::selection {
-  background: var(--charcoal);
-  color: var(--ivory);
+  background: var(--coral);
+  color: #fff;
 }
 
 :focus-visible {
-  outline: 1px solid var(--charcoal);
-  outline-offset: 4px;
+  outline: 2px solid var(--coral);
+  outline-offset: 3px;
 }
 
 .font-display {
   font-family: var(--font-display);
-  font-weight: 400;
-}
-
-.hairline {
-  height: 1px;
-  background: var(--line);
-}
-
-.plate {
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
-}
-
-.plate::after {
-  content: "";
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  opacity: 0.14;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-.plate-silk {
-  background:
-    radial-gradient(80% 60% at 20% 8%, rgb(247 245 242 / 0.9), transparent 46%),
-    radial-gradient(70% 60% at 86% 86%, rgb(140 108 96 / 0.35), transparent 50%),
-    linear-gradient(168deg, #ebe4dc 0%, #d4c2b6 42%, #a88978 78%, #5c4a42 100%);
-}
-
-.plate-marble {
-  background:
-    radial-gradient(70% 50% at 80% 10%, rgb(232 220 210 / 0.22), transparent 48%),
-    linear-gradient(200deg, #3a3532 0%, #1a1816 55%, #0e0e0c 100%);
-}
-
-.plate-dusk {
-  background:
-    radial-gradient(60% 40% at 72% 18%, rgb(196 160 144 / 0.16), transparent 52%),
-    linear-gradient(180deg, #1c1b19 0%, #0e0e0c 100%);
-}
-
-.parallax-drift {
-  animation: drift 28s ease-in-out infinite;
-}
-
-@keyframes drift {
-  0%,
-  100% {
-    transform: scale(1.03) translate3d(0, 0, 0);
-  }
-  50% {
-    transform: scale(1.08) translate3d(-1.4%, 1%, 0);
-  }
+  font-optical-sizing: auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .parallax-drift {
-    animation: none !important;
   }
 }

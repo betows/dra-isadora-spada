@@ -15,69 +15,40 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#F7F5F2",
+          background: "#FFF8F3",
           padding: "64px 72px",
-          color: "#0E0E0C",
+          color: "#2A211C",
         }}
       >
         <div
           style={{
             display: "flex",
             justifyContent: "space-between",
-            fontSize: 18,
-            letterSpacing: 5,
-            textTransform: "uppercase",
-            color: "#74706B",
+            fontSize: 20,
+            color: "#E36B4F",
           }}
         >
           <span>CRO-SC 18650</span>
           <span>Blumenau · SC</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ fontSize: 28 }}>Dra. Isadora Mór Spada</div>
           <div
             style={{
-              fontSize: 20,
-              letterSpacing: 5,
-              textTransform: "uppercase",
-              color: "#74706B",
-            }}
-          >
-            Dra. Isadora Mór Spada
-          </div>
-          <div
-            style={{
-              marginTop: 18,
-              fontSize: 78,
-              lineHeight: 0.88,
-              maxWidth: 920,
+              marginTop: 16,
+              fontSize: 72,
+              lineHeight: 1,
+              maxWidth: 900,
+              fontWeight: 500,
             }}
           >
             Harmonização facial em Blumenau
           </div>
-          <div
-            style={{
-              marginTop: 24,
-              fontSize: 28,
-              fontStyle: "italic",
-              color: "#141412",
-            }}
-          >
-            uma doc autêntica pra rostos autênticos
-          </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            gap: 32,
-            fontSize: 16,
-            letterSpacing: 4,
-            textTransform: "uppercase",
-            color: "#C4A090",
-          }}
-        >
+        <div style={{ display: "flex", gap: 28, fontSize: 22, color: "#746862" }}>
+          <span>Botox</span>
           <span>LipSense®</span>
-          <span>Ilumme</span>
-          <span>SynFace</span>
+          <span>Mentoria Ilumme</span>
         </div>
       </div>
     ),

@@ -2,12 +2,11 @@
 
 Landing page de produção para a **Dra. Isadora Mór Spada** (CRO-SC 18650) — harmonização facial, botox, preenchimento e mentoria em Blumenau/SC.
 
-Estética clínica de luxo: alabaster e charcoal, um acento blush, Instrument Serif + Manrope. Hero full-width com parallax só no bloco de imagem. Um CTA: consulta no WhatsApp. SEO local em PT-BR.
+Visual claro e direto: papel quente, coral e Fraunces + Manrope. Hero compacto, sem slogan de vitrine. SEO local em PT-BR.
 
 ## Stack
 
 - Next.js 16 (App Router) + TypeScript + Tailwind CSS 4
-- Framer Motion (reveals + parallax em placas, com `prefers-reduced-motion`)
 
 ## Desenvolvimento
 
@@ -37,10 +36,6 @@ npm start
 - Open Graph / Twitter cards gerados
 - JSON-LD `Physician` + `LocalBusiness` + `FAQPage` (Blumenau/SC, CRO-SC 18650)
 - Sem afirmações de ranking (“primeiro lugar no Google” e similares)
-
-## Acessibilidade de movimento
-
-Se o sistema pede `prefers-reduced-motion: reduce`, o parallax das placas e as animações de entrada são desligados.
 
 ## Conteúdo e CTAs
 

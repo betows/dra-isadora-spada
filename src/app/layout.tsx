@@ -1,14 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Manrope } from "next/font/google";
+import { Fraunces, Manrope } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { doctor, seo, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const instrument = Instrument_Serif({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: "400",
-  style: ["normal", "italic"],
-  variable: "--font-instrument",
+  axes: ["SOFT", "WONK", "opsz"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 
@@ -62,7 +61,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#F7F5F2",
+  themeColor: "#FFF8F3",
   width: "device-width",
   initialScale: 1,
   colorScheme: "light",
@@ -72,9 +71,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${instrument.variable} ${manrope.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="relative min-h-full bg-ivory font-sans text-ink">
+      <body className="min-h-full bg-paper font-sans text-ink">
         <JsonLd />
         {children}
       </body>
