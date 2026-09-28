@@ -15,35 +15,74 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "linear-gradient(145deg, #FAF7F2 0%, #F4EFE8 55%, #D8B8A4 100%)",
+          background: "#F3EEE6",
           padding: "64px 72px",
-          color: "#6E2C3A",
+          color: "#12100E",
         }}
       >
-        <div style={{ display: "flex", justifyContent: "space-between", fontSize: 22 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            fontSize: 18,
+            letterSpacing: 4,
+            textTransform: "uppercase",
+            color: "#6F6860",
+          }}
+        >
           <span>CRO-SC 18650</span>
           <span>Blumenau · SC</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 34, letterSpacing: 6, textTransform: "uppercase" }}>
+          <div
+            style={{
+              width: 72,
+              height: 1,
+              background: "#B07A52",
+              marginBottom: 28,
+            }}
+          />
+          <div
+            style={{
+              fontSize: 22,
+              letterSpacing: 5,
+              textTransform: "uppercase",
+              color: "#6F6860",
+            }}
+          >
             Dra. Isadora Mór Spada
           </div>
           <div
             style={{
-              marginTop: 18,
-              fontSize: 72,
-              lineHeight: 0.95,
-              fontWeight: 600,
-              maxWidth: 860,
+              marginTop: 16,
+              fontSize: 76,
+              lineHeight: 0.9,
+              maxWidth: 920,
             }}
           >
             Harmonização facial em Blumenau
           </div>
-          <div style={{ marginTop: 22, fontSize: 34, color: "#C45A3A" }}>
+          <div
+            style={{
+              marginTop: 22,
+              fontSize: 28,
+              fontStyle: "italic",
+              color: "#1A1714",
+            }}
+          >
             uma doc autêntica pra rostos autênticos
           </div>
         </div>
-        <div style={{ display: "flex", gap: 28, fontSize: 22, color: "#6E2C3A" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: 32,
+            fontSize: 18,
+            letterSpacing: 3,
+            textTransform: "uppercase",
+            color: "#B07A52",
+          }}
+        >
           <span>LipSense®</span>
           <span>Mentoria Ilumme</span>
           <span>SynFace</span>

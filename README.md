@@ -2,7 +2,7 @@
 
 Landing page de produção para a **Dra. Isadora Mór Spada** (CRO-SC 18650) — harmonização facial, botox, preenchimento e mentoria em Blumenau/SC.
 
-Paleta editorial cream / terracotta / burgundy / gold. Tipografia Cormorant Garamond, Great Vibes e DM Sans. Hero WebGL suave (Three.js), revelações com Framer Motion e SEO local em PT-BR.
+Estética clínica de luxo: ivory e charcoal em seções alternadas, um único acento cobre, Instrument Serif + Inter. Hero com malha Three.js discreta, revelações com Framer Motion e SEO local em PT-BR.
 
 ## Stack
 

@@ -22,15 +22,15 @@ export function InstagramIcon({ className }: IconProps) {
   );
 }
 
-export function PinIcon({ className }: IconProps) {
+export function ArrowIcon({ className }: IconProps) {
   return (
-    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true" className={className}>
+    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" className={className}>
       <path
+        d="M3 8h10M9 4l4 4-4 4"
         stroke="currentColor"
-        strokeWidth="1.6"
-        d="M12 21s6-5.2 6-10a6 6 0 1 0-12 0c0 4.8 6 10 6 10Z"
+        strokeWidth="1.2"
+        strokeLinecap="square"
       />
-      <circle cx="12" cy="11" r="1.8" fill="currentColor" />
     </svg>
   );
 }

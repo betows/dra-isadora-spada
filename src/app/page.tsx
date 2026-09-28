@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Marquee } from "@/components/Marquee";
+import { Methods } from "@/components/Methods";
 import { MobileDock } from "@/components/MobileDock";
 import { Services } from "@/components/Services";
 
@@ -14,7 +15,7 @@ export default function Home() {
     <>
       <a
         href="#conteudo"
-        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-gold focus:px-4 focus:py-2 focus:text-burgundy"
+        className="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:bg-charcoal focus:px-4 focus:py-2 focus:text-ivory"
       >
         Ir para o conteúdo
       </a>
@@ -22,6 +23,7 @@ export default function Home() {
       <main id="conteudo">
         <Hero />
         <Marquee />
+        <Methods />
         <About />
         <Services />
         <Differentials />

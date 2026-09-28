@@ -1,82 +1,87 @@
-import { Parallax, Reveal } from "@/components/Reveal";
-import { doctor } from "@/lib/site";
+import { CtaLink } from "@/components/CtaLink";
+import { Reveal } from "@/components/Reveal";
+import { doctor, links } from "@/lib/site";
 
 export function About() {
   return (
-    <section id="sobre" className="relative scroll-mt-24 bg-cream-soft py-20 sm:py-28">
-      <div className="mx-auto max-w-6xl px-5 sm:px-8">
+    <section id="sobre" className="relative scroll-mt-24 bg-charcoal text-ivory">
+      <div className="mx-auto grid max-w-[1440px] gap-16 px-6 py-24 md:px-10 lg:grid-cols-[0.92fr_1.08fr] lg:gap-24 lg:px-16 lg:py-36">
         <Reveal>
-          <p className="text-[0.68rem] uppercase tracking-[0.28em] text-gold">
-            01 — Sobre
-          </p>
-          <h2 className="mt-3 max-w-3xl font-display text-4xl font-semibold tracking-tight text-burgundy sm:text-5xl">
-            Os 2 universos da Isa: clínica e mentoria
-          </h2>
-        </Reveal>
-
-        <div className="mt-12 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <Parallax>
-            <div className="relative overflow-hidden rounded-[1.75rem] border border-gold/30 bg-cream p-8 sm:p-10">
-              <p className="font-script text-3xl text-terracotta">seja muito bem-vinda</p>
-              <p className="mt-6 text-base leading-relaxed text-ink/75">
-                Esse espaço mistura pacientes, bastidores, gestão e mentoria. São
-                dois universos que fazem parte da rotina todos os dias — o
-                consultório em {doctor.city} e a formação de quem quer crescer na
-                estética com técnica e posicionamento.
+          <div className="plate plate-marble aspect-[4/5] min-h-[22rem] lg:sticky lg:top-28">
+            <div className="absolute inset-x-8 bottom-8 z-10 sm:inset-x-10 sm:bottom-10">
+              <p className="text-[0.62rem] uppercase tracking-[0.28em] text-copper-soft">
+                os 2 universos
               </p>
-              <p className="mt-4 text-base leading-relaxed text-ink/75">
-                Se você se identifica com algum deles, a gente acha que vai
-                gostar de estar por aqui.
-              </p>
-              <p className="mt-8 font-display text-xl italic text-burgundy">
-                {doctor.name}
-                <span className="mt-1 block font-sans text-sm not-italic tracking-[0.16em] text-burgundy/55">
-                  {doctor.cro}
-                </span>
+              <p className="mt-3 font-display text-3xl leading-none sm:text-4xl">
+                Clínica + mentoria
               </p>
             </div>
-          </Parallax>
+          </div>
+        </Reveal>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <Reveal delay={0.08} className="sm:mt-8">
-              <article className="flex h-full flex-col justify-between rounded-[1.5rem] border border-burgundy/10 bg-burgundy p-7 text-cream-soft">
-                <div>
-                  <p className="text-[0.65rem] uppercase tracking-[0.24em] text-gold">
-                    Universo 01
-                  </p>
-                  <h3 className="mt-3 font-display text-3xl">Clínica</h3>
-                  <p className="mt-4 text-sm leading-relaxed text-cream-soft/80">
-                    Harmonização facial, botox e preenchimento em Blumenau — com
-                    conversa franca, hora marcada e um plano que cabe no seu
-                    rosto, não em um filtro.
-                  </p>
-                </div>
-                <p className="mt-8 font-script text-2xl text-gold-bright">
-                  pacientes &amp; bastidores
+        <div className="flex flex-col justify-center">
+          <Reveal>
+            <p className="text-[0.68rem] uppercase tracking-[0.28em] text-copper-soft">
+              01 — Sobre
+            </p>
+            <h2 className="mt-6 max-w-xl font-display text-[clamp(2.4rem,4.6vw,4.4rem)] leading-[0.96] tracking-[-0.02em]">
+              Os 2 universos da Isa: clínica e mentoria
+            </h2>
+          </Reveal>
+
+          <Reveal delay={0.08}>
+            <p className="mt-8 max-w-lg text-[1.02rem] leading-[1.75] text-ivory/68">
+              Esse espaço mistura pacientes, bastidores, gestão e mentoria. São
+              dois universos que fazem parte da rotina todos os dias — o
+              consultório em {doctor.city} e a formação de quem quer crescer na
+              estética com técnica e posicionamento.
+            </p>
+            <p className="mt-5 max-w-lg text-[1.02rem] leading-[1.75] text-ivory/68">
+              Se você se identifica com algum deles, a gente acha que vai
+              gostar de estar por aqui.
+            </p>
+            <p className="mt-10 font-display text-2xl italic">
+              {doctor.name}
+              <span className="mt-2 block font-sans text-[0.68rem] not-italic uppercase tracking-[0.22em] text-ivory/45">
+                {doctor.cro}
+              </span>
+            </p>
+          </Reveal>
+
+          <div className="mt-14 grid gap-px bg-ivory/10 sm:grid-cols-2">
+            <Reveal delay={0.1}>
+              <article className="bg-charcoal p-8">
+                <p className="text-[0.62rem] uppercase tracking-[0.26em] text-copper-soft">
+                  Universo 01
+                </p>
+                <h3 className="mt-4 font-display text-3xl">Clínica</h3>
+                <p className="mt-4 text-sm leading-relaxed text-ivory/62">
+                  Harmonização facial, botox e preenchimento em Blumenau — com
+                  conversa franca, hora marcada e um plano que cabe no seu
+                  rosto, não em um filtro.
                 </p>
               </article>
             </Reveal>
             <Reveal delay={0.16}>
-              <article className="flex h-full flex-col justify-between rounded-[1.5rem] border border-gold/35 bg-cream p-7">
-                <div>
-                  <p className="text-[0.65rem] uppercase tracking-[0.24em] text-terracotta">
-                    Universo 02
-                  </p>
-                  <h3 className="mt-3 font-display text-3xl text-burgundy">
-                    Mentoria
-                  </h3>
-                  <p className="mt-4 text-sm leading-relaxed text-ink/70">
-                    Mentoria Ilumme, Método LipSense® e SynFace para
-                    profissionais que querem técnica, gestão e um discurso tão
-                    autêntico quanto o resultado.
-                  </p>
-                </div>
-                <p className="mt-8 font-script text-2xl text-terracotta">
-                  Ilumme · LipSense®
+              <article className="bg-charcoal p-8">
+                <p className="text-[0.62rem] uppercase tracking-[0.26em] text-copper-soft">
+                  Universo 02
+                </p>
+                <h3 className="mt-4 font-display text-3xl">Mentoria</h3>
+                <p className="mt-4 text-sm leading-relaxed text-ivory/62">
+                  Mentoria Ilumme, Método LipSense® e SynFace para
+                  profissionais que querem técnica, gestão e um discurso tão
+                  autêntico quanto o resultado.
                 </p>
               </article>
             </Reveal>
           </div>
+
+          <Reveal delay={0.2} className="mt-10">
+            <CtaLink href={links.whatsapp} tone="dark">
+              Seja muito bem-vinda
+            </CtaLink>
+          </Reveal>
         </div>
       </div>
     </section>
