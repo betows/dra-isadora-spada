@@ -1,19 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Coiny, Nunito } from "next/font/google";
+import { EB_Garamond, Figtree } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { doctor, seo, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const coiny = Coiny({
-  weight: "400",
+const garamond = EB_Garamond({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-coiny",
+  weight: ["400", "500"],
+  variable: "--font-garamond",
   display: "swap",
 });
 
-const nunito = Nunito({
+const figtree = Figtree({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-nunito",
+  weight: ["400", "500", "600"],
+  variable: "--font-figtree",
   display: "swap",
 });
 
@@ -61,7 +62,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#7A2D3A",
+  themeColor: "#ffffeb",
   width: "device-width",
   initialScale: 1,
   colorScheme: "light",
@@ -69,8 +70,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className={`${coiny.variable} ${nunito.variable} h-full antialiased`}>
-      <body className="min-h-full bg-paper font-sans text-ink">
+    <html lang="pt-BR" className={`${garamond.variable} ${figtree.variable} h-full antialiased`}>
+      <body className="min-h-full bg-stone font-sans text-ink">
         <JsonLd />
         <div className="scroll-progress" aria-hidden="true" />
         {children}

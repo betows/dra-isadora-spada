@@ -2,27 +2,18 @@ import { differentials } from "@/lib/site";
 
 export function Differentials() {
   return (
-    <section id="diferenciais" className="scroll-mt-20 bg-paper px-5 py-16 sm:px-8 sm:py-24">
-      <div className="mx-auto max-w-3xl">
-        <h2 className="rise font-display text-4xl leading-none text-wine sm:text-6xl">
-          Como é o atendimento
-        </h2>
-        <div className="mt-8">
-          {differentials.map((item, index) => (
-            <article
-              key={item.n}
-              style={{ top: `calc(6rem + ${index} * 14px)`, zIndex: index + 1 }}
-              className={`stack-card sticky rounded-[1.4rem] border border-wine/10 bg-cream p-6 shadow-[0_8px_0_#e8cfc9] sm:p-8 ${
-                index === differentials.length - 1 ? "mb-4" : "mb-[20vh] sm:mb-[36vh]"
-              }`}
-            >
-              <p className="text-sm font-extrabold text-wine">{item.n}</p>
-              <h3 className="mt-2 font-display text-3xl leading-none text-ink">{item.title}</h3>
-              <p className="mt-3 text-base font-semibold leading-relaxed text-ink/75">{item.text}</p>
-            </article>
-          ))}
-          <div className="h-8" />
-        </div>
+    <section id="diferenciais" className="scroll-mt-28 rounded-[32px] border-2 border-ink bg-cream px-5 py-12 sm:rounded-[40px] sm:px-10 sm:py-16 lg:px-14">
+      <h2 className="rise max-w-xl font-display text-4xl leading-[1.05] tracking-[-0.03em] text-ink sm:text-5xl">
+        Como é o atendimento
+      </h2>
+      <div className="mt-8 grid gap-4 md:grid-cols-2">
+        {differentials.map((item) => (
+          <article key={item.n} className="rise rounded-[32px] border-2 border-ink p-6 sm:p-7">
+            <p className="inline-flex rounded-full bg-forest px-3 py-1 text-sm font-medium text-cream">{item.n}</p>
+            <h3 className="mt-4 font-display text-3xl leading-[1.1] tracking-[-0.02em] text-ink">{item.title}</h3>
+            <p className="mt-3 text-base leading-relaxed text-ink">{item.text}</p>
+          </article>
+        ))}
       </div>
     </section>
   );

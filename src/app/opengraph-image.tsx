@@ -13,9 +13,8 @@ export default function OpenGraphImage() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background:
-            "repeating-linear-gradient(90deg, #7A2D3A 0px, #7A2D3A 46px, #E8CFC9 46px, #E8CFC9 92px)",
-          padding: "56px",
+          background: "#e4e4d0",
+          padding: "36px",
         }}
       >
         <div
@@ -24,33 +23,36 @@ export default function OpenGraphImage() {
             flexDirection: "column",
             justifyContent: "space-between",
             width: "100%",
-            borderRadius: 28,
-            background: "#F6EDD6",
-            color: "#5E2030",
+            borderRadius: 40,
+            border: "4px solid #1a1a1a",
+            background: "#ffffeb",
+            color: "#1a1a1a",
             padding: "48px 56px",
           }}
         >
-          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 22 }}>
-            <span>@draisadoraspada</span>
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 24 }}>
+            <span>Dra. Isadora Mór Spada</span>
             <span>CRO-SC 18650</span>
           </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <div style={{ fontSize: 28 }}>Dra. Isadora Mór Spada</div>
-            <div
-              style={{
-                marginTop: 12,
-                fontSize: 68,
-                lineHeight: 1,
-                maxWidth: 860,
-              }}
-            >
-              Harmonização facial em Blumenau
-            </div>
+          <div style={{ display: "flex", fontSize: 72, lineHeight: 1, letterSpacing: -2, maxWidth: 900 }}>
+            Harmonização facial em Blumenau
           </div>
-          <div style={{ display: "flex", gap: 28, fontSize: 24 }}>
-            <span>Botox</span>
-            <span>LipSense®</span>
-            <span>Mentoria Ilumme</span>
+          <div style={{ display: "flex", gap: 16 }}>
+            {["Botox", "LipSense®", "Mentoria Ilumme"].map((item) => (
+              <div
+                key={item}
+                style={{
+                  display: "flex",
+                  border: "3px solid #1a1a1a",
+                  background: "#f0d7ff",
+                  borderRadius: 999,
+                  padding: "8px 18px",
+                  fontSize: 22,
+                }}
+              >
+                {item}
+              </div>
+            ))}
           </div>
         </div>
       </div>
