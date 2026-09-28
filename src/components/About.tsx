@@ -12,7 +12,7 @@ export function About() {
               <p className="text-[0.62rem] uppercase tracking-[0.28em] text-copper-soft">
                 os 2 universos
               </p>
-              <p className="mt-3 font-display text-3xl leading-none sm:text-4xl">
+              <p className="mt-3 font-display text-3xl leading-none text-ivory sm:text-4xl">
                 Clínica + mentoria
               </p>
             </div>

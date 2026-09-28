@@ -4,12 +4,10 @@ import dynamic from "next/dynamic";
 import { useReducedMotion } from "framer-motion";
 import { CtaLink } from "@/components/CtaLink";
 import { InstagramIcon, WhatsAppIcon } from "@/components/Icons";
-import { HeroFallback } from "@/components/HeroScene";
 import { doctor, highlights, links } from "@/lib/site";
 
 const HeroScene = dynamic(() => import("@/components/HeroScene"), {
   ssr: false,
-  loading: () => <HeroFallback />,
 });
 
 export function Hero() {
@@ -20,17 +18,27 @@ export function Hero() {
       id="topo"
       className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-ivory"
     >
-      <div className="pointer-events-none absolute inset-y-0 right-0 hidden w-[46%] lg:block">
-        {reduced ? <HeroFallback /> : <HeroScene />}
-        <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-ivory to-transparent" />
-      </div>
-      <div className="pointer-events-none absolute inset-0 lg:hidden">
-        <HeroFallback />
-        <div className="absolute inset-0 bg-gradient-to-b from-ivory via-ivory/70 to-ivory" />
+      <div className="pointer-events-none absolute inset-x-0 top-[4.25rem] h-[36vh] overflow-hidden lg:hidden">
+        <div className="parallax-drift plate plate-silk h-full w-full" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ivory/15 to-ivory" />
       </div>
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-end px-6 pb-28 pt-28 md:px-10 lg:justify-center lg:px-16 lg:pb-20 lg:pt-32">
-        <div className="mb-10 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.68rem] uppercase tracking-[0.24em] text-muted lg:mb-14">
+      <div className="pointer-events-none absolute inset-y-[5.5rem] right-16 hidden w-[min(34rem,38%)] overflow-hidden lg:block">
+        <div className="parallax-drift plate plate-silk h-full w-full" />
+        {reduced ? null : (
+          <div className="absolute inset-0 opacity-60">
+            <HeroScene />
+          </div>
+        )}
+        <div className="absolute inset-x-0 bottom-0 z-10 bg-gradient-to-t from-charcoal/40 to-transparent px-8 py-8">
+          <p className="text-[0.62rem] uppercase tracking-[0.28em] text-ivory">
+            {doctor.city} · {doctor.cro}
+          </p>
+        </div>
+      </div>
+
+      <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-end px-6 pb-28 pt-[42vh] md:px-10 lg:justify-center lg:px-16 lg:pb-20 lg:pt-32">
+        <div className="mb-8 flex flex-wrap items-center gap-x-6 gap-y-2 text-[0.68rem] uppercase tracking-[0.24em] text-muted lg:mb-12">
           <span>
             {doctor.city} · {doctor.stateFull}
           </span>
@@ -38,14 +46,14 @@ export function Hero() {
           <span>{doctor.cro}</span>
         </div>
 
-        <div className="max-w-4xl">
-          <h1 className="font-display text-[clamp(3.15rem,11vw,8.4rem)] leading-[0.88] tracking-[-0.03em] text-charcoal">
+        <div className="max-w-[46rem]">
+          <h1 className="font-display text-[clamp(3.15rem,9.4vw,7.4rem)] leading-[0.88] tracking-[-0.03em] text-charcoal">
             Harmonização
             <span className="block">facial em</span>
-            <span className="block italic text-charcoal">Blumenau</span>
+            <span className="block italic">Blumenau</span>
           </h1>
 
-          <div className="mt-8 max-w-xl lg:mt-10">
+          <div className="mt-8 max-w-lg lg:mt-10">
             <div className="hairline-copper mb-6 w-24" />
             <p className="font-display text-2xl italic leading-snug text-charcoal/80 sm:text-[1.85rem]">
               {doctor.tagline}
@@ -69,7 +77,7 @@ export function Hero() {
           </div>
         </div>
 
-        <ul className="mt-16 hidden flex-wrap gap-x-8 gap-y-3 border-t border-charcoal/10 pt-6 text-[0.68rem] uppercase tracking-[0.2em] text-muted lg:flex">
+        <ul className="mt-16 hidden max-w-[46rem] flex-wrap gap-x-8 gap-y-3 border-t border-charcoal/10 pt-6 text-[0.68rem] uppercase tracking-[0.2em] text-muted lg:flex">
           {highlights.map((item) => (
             <li key={item.label} className="flex items-baseline gap-2">
               <span className="text-charcoal">{item.label}</span>

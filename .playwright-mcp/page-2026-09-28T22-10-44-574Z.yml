@@ -1,0 +1,312 @@
+- generic [ref=f4e66]:
+  - link "Ir para o conteúdo" [ref=f4e67] [cursor=pointer]:
+    - /url: "#conteudo"
+  - banner [ref=f4e68]:
+    - generic [ref=f4e69]:
+      - link "IS Dra. Isadora CRO-SC 18650 · Blumenau" [ref=f4e70] [cursor=pointer]:
+        - /url: "#topo"
+        - generic [ref=f4e71]: IS
+        - generic [ref=f4e72]:
+          - generic [ref=f4e73]: Dra. Isadora
+          - generic [ref=f4e74]: CRO-SC 18650 · Blumenau
+      - navigation "Seções" [ref=f4e75]:
+        - link "Sobre" [ref=f4e76] [cursor=pointer]:
+          - /url: "#sobre"
+        - link "Serviços" [ref=f4e77] [cursor=pointer]:
+          - /url: "#servicos"
+        - link "Mentoria" [ref=f4e78] [cursor=pointer]:
+          - /url: "#mentoria"
+        - link "FAQ" [ref=f4e79] [cursor=pointer]:
+          - /url: "#faq"
+      - generic [ref=f4e80]:
+        - link "Instagram da Dra. Isadora" [ref=f4e81] [cursor=pointer]:
+          - /url: https://www.instagram.com/draisadoraspada/
+        - link "WhatsApp" [ref=f4e84] [cursor=pointer]:
+          - /url: https://wa.me/message/JO4Z2TQT4S2VK1
+  - main [ref=f4e87]:
+    - generic [ref=f4e88]:
+      - generic:
+        - generic:
+          - paragraph: Blumenau · CRO-SC 18650
+      - generic [ref=f4e89]:
+        - generic [ref=f4e90]:
+          - generic [ref=f4e91]: Blumenau · Santa Catarina
+          - generic [ref=f4e93]: CRO-SC 18650
+        - generic [ref=f4e94]:
+          - heading "Harmonização facial em Blumenau" [level=1] [ref=f4e95]:
+            - text: Harmonização
+            - generic [ref=f4e96]: facial em
+            - generic [ref=f4e97]: Blumenau
+          - generic [ref=f4e98]:
+            - paragraph [ref=f4e100]: uma doc autêntica pra rostos autênticos
+            - paragraph [ref=f4e101]: Dra. Isadora Mór Spada — clínica, pacientes e mentoria no mesmo olhar. Botox, preenchimento e o Método LipSense® para quem quer parecer consigo mesma, com técnica e verdade.
+          - generic [ref=f4e102]:
+            - link "Agendar avaliação" [ref=f4e103] [cursor=pointer]:
+              - /url: https://wa.me/message/JO4Z2TQT4S2VK1
+            - link "@draisadoraspada" [ref=f4e106] [cursor=pointer]:
+              - /url: https://www.instagram.com/draisadoraspada/
+        - list [ref=f4e109]:
+          - listitem [ref=f4e110]:
+            - generic [ref=f4e111]: LipSense®
+            - generic [ref=f4e112]: ·
+            - generic [ref=f4e113]: método
+          - listitem [ref=f4e114]:
+            - generic [ref=f4e115]: Ilumme
+            - generic [ref=f4e116]: ·
+            - generic [ref=f4e117]: mentoria
+          - listitem [ref=f4e118]:
+            - generic [ref=f4e119]: SynFace
+            - generic [ref=f4e120]: ·
+            - generic [ref=f4e121]: protocolo
+          - listitem [ref=f4e122]:
+            - generic [ref=f4e123]: Clínica
+            - generic [ref=f4e124]: ·
+            - generic [ref=f4e125]: Bnu
+          - listitem [ref=f4e126]:
+            - generic [ref=f4e127]: Botox
+            - generic [ref=f4e128]: ·
+            - generic [ref=f4e129]: expressão
+          - listitem [ref=f4e130]:
+            - generic [ref=f4e131]: Lábios
+            - generic [ref=f4e132]: ·
+            - generic [ref=f4e133]: preenchimento
+    - generic [ref=f4e135]:
+      - generic [ref=f4e136]:
+        - text: Harmonização facial
+        - generic [aria-hidden] [ref=f4e137]: —
+      - generic [ref=f4e138]:
+        - text: Botox em Blumenau
+        - generic [aria-hidden] [ref=f4e139]: —
+      - generic [ref=f4e140]:
+        - text: Preenchimento
+        - generic [aria-hidden] [ref=f4e141]: —
+      - generic [ref=f4e142]:
+        - text: Método LipSense®
+        - generic [aria-hidden] [ref=f4e143]: —
+      - generic [ref=f4e144]:
+        - text: Mentoria Ilumme
+        - generic [aria-hidden] [ref=f4e145]: —
+      - generic [ref=f4e146]:
+        - text: SynFace
+        - generic [aria-hidden] [ref=f4e147]: —
+      - generic [ref=f4e148]:
+        - text: Rostos autênticos
+        - generic [aria-hidden] [ref=f4e149]: —
+      - generic [ref=f4e150]:
+        - text: CRO-SC 18650
+        - generic [aria-hidden] [ref=f4e151]: —
+      - generic [ref=f4e152]:
+        - text: Harmonização facial
+        - generic [aria-hidden] [ref=f4e153]: —
+      - generic [ref=f4e154]:
+        - text: Botox em Blumenau
+        - generic [aria-hidden] [ref=f4e155]: —
+      - generic [ref=f4e156]:
+        - text: Preenchimento
+        - generic [aria-hidden] [ref=f4e157]: —
+      - generic [ref=f4e158]:
+        - text: Método LipSense®
+        - generic [aria-hidden] [ref=f4e159]: —
+      - generic [ref=f4e160]:
+        - text: Mentoria Ilumme
+        - generic [aria-hidden] [ref=f4e161]: —
+      - generic [ref=f4e162]:
+        - text: SynFace
+        - generic [aria-hidden] [ref=f4e163]: —
+      - generic [ref=f4e164]:
+        - text: Rostos autênticos
+        - generic [aria-hidden] [ref=f4e165]: —
+      - generic [ref=f4e166]:
+        - text: CRO-SC 18650
+        - generic [aria-hidden] [ref=f4e167]: —
+    - region "Métodos e protocolos" [ref=f4e168]:
+      - generic [ref=f4e169]:
+        - article [ref=f4e171]:
+          - paragraph [ref=f4e172]: Método
+          - heading "LipSense®" [level=2] [ref=f4e173]
+          - paragraph [ref=f4e174]: Leitura de lábios com identidade — volume, borda e movimento, sem o lábio de catálogo.
+        - article [ref=f4e176]:
+          - paragraph [ref=f4e177]: Mentoria
+          - heading "Ilumme" [level=2] [ref=f4e178]
+          - paragraph [ref=f4e179]: "Formação e posicionamento para quem atende: técnica, gestão e verdade no consultório."
+        - article [ref=f4e181]:
+          - paragraph [ref=f4e182]: Protocolo
+          - heading "SynFace" [level=2] [ref=f4e183]
+          - paragraph [ref=f4e184]: Planejamento de rosto inteiro — proporção, luz e gesto — a partir da anatomia de cada pessoa.
+    - generic [ref=f4e186]:
+      - generic [ref=f4e189]:
+        - paragraph [ref=f4e190]: os 2 universos
+        - paragraph [ref=f4e191]: Clínica + mentoria
+      - generic [ref=f4e192]:
+        - generic [ref=f4e193]:
+          - paragraph [ref=f4e194]: 01 — Sobre
+          - 'heading "Os 2 universos da Isa: clínica e mentoria" [level=2] [ref=f4e195]'
+        - generic [ref=f4e196]:
+          - paragraph [ref=f4e197]: Esse espaço mistura pacientes, bastidores, gestão e mentoria. São dois universos que fazem parte da rotina todos os dias — o consultório em Blumenau e a formação de quem quer crescer na estética com técnica e posicionamento.
+          - paragraph [ref=f4e198]: Se você se identifica com algum deles, a gente acha que vai gostar de estar por aqui.
+          - paragraph [ref=f4e199]:
+            - text: Dra. Isadora Mór Spada
+            - generic [ref=f4e200]: CRO-SC 18650
+        - generic [ref=f4e201]:
+          - article [ref=f4e203]:
+            - paragraph [ref=f4e204]: Universo 01
+            - heading "Clínica" [level=3] [ref=f4e205]
+            - paragraph [ref=f4e206]: Harmonização facial, botox e preenchimento em Blumenau — com conversa franca, hora marcada e um plano que cabe no seu rosto, não em um filtro.
+          - article [ref=f4e208]:
+            - paragraph [ref=f4e209]: Universo 02
+            - heading "Mentoria" [level=3] [ref=f4e210]
+            - paragraph [ref=f4e211]: Mentoria Ilumme, Método LipSense® e SynFace para profissionais que querem técnica, gestão e um discurso tão autêntico quanto o resultado.
+        - link "Seja muito bem-vinda" [ref=f4e213] [cursor=pointer]:
+          - /url: https://wa.me/message/JO4Z2TQT4S2VK1
+    - generic [ref=f4e215]:
+      - generic [ref=f4e216]:
+        - generic [ref=f4e217]:
+          - paragraph [ref=f4e218]: 02 — Serviços
+          - heading "Harmonização, botox, preenchimento e mentoria" [level=2] [ref=f4e219]
+        - paragraph [ref=f4e220]: "Procedimentos orofaciais em Blumenau e formação para quem atende. Tudo parte da mesma pergunta: o que é autêntico para este rosto — ou para esta carreira?"
+      - generic [ref=f4e221]:
+        - article [ref=f4e223]:
+          - paragraph [ref=f4e224]: "01"
+          - generic [ref=f4e225]:
+            - paragraph [ref=f4e226]: Blumenau
+            - heading "Harmonização facial em Blumenau" [level=3] [ref=f4e227]
+          - generic [ref=f4e228]:
+            - paragraph [ref=f4e229]: Planejamento do rosto inteiro — proporção, luz e movimento — para realçar o que já é seu, sem máscara de procedimento.
+            - list [ref=f4e230]:
+              - listitem [ref=f4e231]: Avaliação orofacial
+              - listitem [ref=f4e233]: Plano sob medida
+              - listitem [ref=f4e235]: Resultado natural
+        - article [ref=f4e238]:
+          - paragraph [ref=f4e239]: "02"
+          - generic [ref=f4e240]:
+            - paragraph [ref=f4e241]: Toxina botulínica
+            - heading "Botox em Blumenau" [level=3] [ref=f4e242]
+          - generic [ref=f4e243]:
+            - paragraph [ref=f4e244]: Suaviza rugas de expressão e previne marcas, com dose e pontos pensados para o seu gesto — não para um filtro.
+            - list [ref=f4e245]:
+              - listitem [ref=f4e246]: Terço superior
+              - listitem [ref=f4e248]: Sorriso gengival
+              - listitem [ref=f4e250]: Prevenção
+        - article [ref=f4e253]:
+          - paragraph [ref=f4e254]: "03"
+          - generic [ref=f4e255]:
+            - paragraph [ref=f4e256]: Ácido hialurônico
+            - heading "Preenchimento" [level=3] [ref=f4e257]
+          - generic [ref=f4e258]:
+            - paragraph [ref=f4e259]: Lábios, malar, mento e contornos com técnica precisa. Inclui o Método LipSense® para lábios com identidade.
+            - list [ref=f4e260]:
+              - listitem [ref=f4e261]: Lábios LipSense®
+              - listitem [ref=f4e263]: Malar e mento
+              - listitem [ref=f4e265]: Olheiras
+        - article [ref=f4e268]:
+          - paragraph [ref=f4e269]: "04"
+          - generic [ref=f4e270]:
+            - paragraph [ref=f4e271]: LipSense® · SynFace
+            - heading "Mentoria Ilumme" [level=3] [ref=f4e272]
+          - generic [ref=f4e273]:
+            - paragraph [ref=f4e274]: Formação e posicionamento para profissionais da estética que querem técnica, gestão e verdade no consultório.
+            - list [ref=f4e275]:
+              - listitem [ref=f4e276]: Método LipSense®
+              - listitem [ref=f4e278]: SynFace
+              - listitem [ref=f4e280]: Posicionamento
+      - link "Tirar dúvida no WhatsApp" [ref=f4e283] [cursor=pointer]:
+        - /url: https://wa.me/message/JO4Z2TQT4S2VK1
+    - generic [ref=f4e287]:
+      - generic [ref=f4e288]:
+        - paragraph [ref=f4e289]: 03 — Diferenciais
+        - heading "Por que este consultório não parece os outros" [level=2] [ref=f4e290]
+      - list [ref=f4e291]:
+        - listitem [ref=f4e293]:
+          - generic [ref=f4e294]: "01"
+          - heading "Rostos autênticos, não copiados" [level=3] [ref=f4e295]
+          - paragraph [ref=f4e296]: Protocolo clínico que parte da sua anatomia e da sua história. Harmonia, não padronização.
+        - listitem [ref=f4e298]:
+          - generic [ref=f4e299]: "02"
+          - heading "Método LipSense®" [level=3] [ref=f4e300]
+          - paragraph [ref=f4e301]: "Leitura própria para lábios: volume, borda e movimento com assinatura — sem o “lábio de catálogo”."
+        - listitem [ref=f4e303]:
+          - generic [ref=f4e304]: "03"
+          - heading "Os 2 universos da Isa" [level=3] [ref=f4e305]
+          - paragraph [ref=f4e306]: "Clínica em Blumenau e mentoria Ilumme no mesmo olhar: pacientes no consultório, profissionais em formação."
+        - listitem [ref=f4e308]:
+          - generic [ref=f4e309]: "04"
+          - heading "Presença local, CRO-SC 18650" [level=3] [ref=f4e310]
+          - paragraph [ref=f4e311]: Atendimento humanizado em Blumenau/SC, com hora marcada e conversa franca antes de qualquer procedimento.
+    - generic [ref=f4e2]:
+      - generic [ref=f4e3]:
+        - paragraph [ref=f4e4]: 04 — FAQ
+        - heading "Harmonização facial, botox e mentoria em Blumenau" [level=2] [ref=f4e5]
+        - paragraph [ref=f4e6]: Respostas diretas para quem pesquisa harmonização facial em Blumenau, botox, preenchimento e a Mentoria Ilumme. Avaliação presencial define indicação — nada aqui substitui consulta.
+      - generic [ref=f4e7]:
+        - generic [ref=f4e9]:
+          - heading [level=3] [ref=f4e10]:
+            - button "Onde fazer harmonização facial em Blumenau?" [expanded] [ref=f4e11]:
+              - generic [aria-hidden] [ref=f4e13]: –
+          - paragraph [ref=f4e16]: A Dra. Isadora Mór Spada (CRO-SC 18650) realiza harmonização facial em Blumenau, Santa Catarina. A avaliação é individual, com hora marcada pelo WhatsApp — o plano considera anatomia, queixa e o que faz sentido para o seu rosto, não um pacote genérico.
+        - generic [ref=f4e18]:
+          - heading [level=3] [ref=f4e19]:
+            - button "A Dra. Isadora aplica botox em Blumenau?" [active] [ref=f4e20]:
+              - generic [aria-hidden] [ref=f4e22]: +
+          - paragraph [ref=f4e23]: Sim. A toxina botulínica (botox) é um dos procedimentos da clínica, usada para suavizar rugas de expressão, equilibrar o terço superior e, quando indicado, sorriso gengival. Indicação, dose e pontos saem da avaliação presencial.
+        - generic [ref=f4e25]:
+          - heading [level=3] [ref=f4e26]:
+            - button "Qual a diferença entre botox e preenchimento?" [ref=f4e27]:
+              - generic [aria-hidden] [ref=f4e29]: +
+          - paragraph [ref=f4e30]: O botox relaxa músculos responsáveis por rugas dinâmicas. O preenchimento com ácido hialurônico devolve ou redistribui volume (lábios, malar, mento, olheiras). Na harmonização facial em Blumenau, os dois podem se complementar — nunca de forma automática.
+        - generic [ref=f4e32]:
+          - heading [level=3] [ref=f4e33]:
+            - button "O que é o Método LipSense®?" [ref=f4e34]:
+              - generic [aria-hidden] [ref=f4e36]: +
+          - paragraph [ref=f4e37]: "É o método criado pela Dra. Isadora para lábios com identidade: leitura de proporção, borda e movimento, para um resultado que conversa com o restante do rosto. Disponível no consultório e ensinado na Mentoria Ilumme."
+        - generic [ref=f4e39]:
+          - heading [level=3] [ref=f4e40]:
+            - button "A Mentoria Ilumme é para pacientes ou para profissionais?" [ref=f4e41]:
+              - generic [aria-hidden] [ref=f4e43]: +
+          - paragraph [ref=f4e44]: A Mentoria Ilumme é voltada a profissionais da estética que querem técnica (incluindo LipSense® e SynFace), gestão e posicionamento. Pacientes de harmonização, botox e preenchimento são atendidos na clínica, em Blumenau.
+        - generic [ref=f4e46]:
+          - heading [level=3] [ref=f4e47]:
+            - button "Quanto custa harmonização facial, botox ou preenchimento em Blumenau?" [ref=f4e48]:
+              - generic [aria-hidden] [ref=f4e50]: +
+          - paragraph [ref=f4e51]: Valores dependem do plano, da quantidade de produto e da indicação clínica. Não trabalhamos com tabela fechada sem avaliação. O caminho é uma conversa no WhatsApp e, se fizer sentido, uma consulta presencial.
+        - generic [ref=f4e53]:
+          - heading [level=3] [ref=f4e54]:
+            - button "Harmonização facial dói? É segura?" [ref=f4e55]:
+              - generic [aria-hidden] [ref=f4e57]: +
+          - paragraph [ref=f4e58]: Conforto e segurança começam na avaliação, no material e na técnica. Pode haver desconforto pontual e inchaço esperado nos primeiros dias. Resultados variam; nenhum procedimento estético deve ser prometido como “definitivo” ou isento de risco. A Dra. Isadora explica indicações e cuidados antes de qualquer conduta.
+        - generic [ref=f4e60]:
+          - heading [level=3] [ref=f4e61]:
+            - button "Como agendar uma avaliação em Blumenau?" [ref=f4e62]:
+              - generic [aria-hidden] [ref=f4e64]: +
+          - paragraph [ref=f4e65]: Pelo WhatsApp da clínica. Atendimento com hora marcada em Blumenau/SC. Enquanto isso, o Instagram @draisadoraspada mostra os dois universos — clínica e mentoria — com transparência de bastidor.
+    - generic [ref=f4e314]:
+      - paragraph [ref=f4e315]: 05 — Próximo passo
+      - heading "Vamos conversar sobre o seu rosto — ou a sua carreira" [level=2] [ref=f4e316]
+      - paragraph [ref=f4e317]: Avaliação de harmonização facial, botox e preenchimento em Blumenau/SC, ou mentoria Ilumme. O primeiro passo é uma mensagem no WhatsApp.
+      - generic [ref=f4e318]:
+        - link "Falar no WhatsApp" [ref=f4e319] [cursor=pointer]:
+          - /url: https://wa.me/message/JO4Z2TQT4S2VK1
+        - link "Seguir no Instagram" [ref=f4e322] [cursor=pointer]:
+          - /url: https://www.instagram.com/draisadoraspada/
+  - contentinfo [ref=f4e325]:
+    - generic [ref=f4e326]:
+      - generic [ref=f4e327]:
+        - paragraph [ref=f4e328]: Dra. Isadora Mór Spada
+        - paragraph [ref=f4e329]: uma doc autêntica pra rostos autênticos
+        - paragraph [ref=f4e330]: Blumenau, Santa Catarina · CRO-SC 18650
+      - navigation "Rodapé" [ref=f4e331]:
+        - link "Sobre" [ref=f4e332] [cursor=pointer]:
+          - /url: "#sobre"
+        - link "Serviços" [ref=f4e333] [cursor=pointer]:
+          - /url: "#servicos"
+        - link "Mentoria" [ref=f4e334] [cursor=pointer]:
+          - /url: "#mentoria"
+        - link "FAQ" [ref=f4e335] [cursor=pointer]:
+          - /url: "#faq"
+      - generic [ref=f4e336]:
+        - link "WhatsApp" [ref=f4e337] [cursor=pointer]:
+          - /url: https://wa.me/message/JO4Z2TQT4S2VK1
+        - link "@draisadoraspada" [ref=f4e340] [cursor=pointer]:
+          - /url: https://www.instagram.com/draisadoraspada/
+    - generic [ref=f4e343]:
+      - paragraph [ref=f4e344]: Resultados variam de acordo com anatomia, indicação e cuidados. Conteúdo informativo — não substitui avaliação presencial e não garante resultado específico. Dra. Isadora Mór Spada, CRO-SC 18650, Blumenau/SC.
+      - paragraph [ref=f4e345]: © 2026 Dra. Isadora Mór Spada. Todos os direitos reservados.
