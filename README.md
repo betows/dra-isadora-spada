@@ -2,7 +2,7 @@
 
 Landing page de produção para a **Dra. Isadora Mór Spada** (CRO-SC 18650) — harmonização facial, botox, preenchimento e mentoria em Blumenau/SC.
 
-Visual claro e direto: papel quente, coral e Fraunces + Manrope. Hero compacto, sem slogan de vitrine. SEO local em PT-BR.
+Visual alinhado ao Instagram da doutora: listras vinho, tipo Bubble (Coiny) e Nunito. Movimento com scroll-driven animations (progresso, parallax e faixa horizontal). SEO local em PT-BR.
 
 ## Stack
 

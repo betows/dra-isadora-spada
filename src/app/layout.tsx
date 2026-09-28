@@ -1,19 +1,19 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Manrope } from "next/font/google";
+import { Coiny, Nunito } from "next/font/google";
 import { JsonLd } from "@/components/JsonLd";
 import { doctor, seo, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
-const fraunces = Fraunces({
-  subsets: ["latin"],
-  axes: ["SOFT", "WONK", "opsz"],
-  variable: "--font-fraunces",
+const coiny = Coiny({
+  weight: "400",
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-coiny",
   display: "swap",
 });
 
-const manrope = Manrope({
-  subsets: ["latin"],
-  variable: "--font-manrope",
+const nunito = Nunito({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-nunito",
   display: "swap",
 });
 
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#FFF8F3",
+  themeColor: "#7A2D3A",
   width: "device-width",
   initialScale: 1,
   colorScheme: "light",
@@ -69,12 +69,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${fraunces.variable} ${manrope.variable} h-full antialiased`}
-    >
+    <html lang="pt-BR" className={`${coiny.variable} ${nunito.variable} h-full antialiased`}>
       <body className="min-h-full bg-paper font-sans text-ink">
         <JsonLd />
+        <div className="scroll-progress" aria-hidden="true" />
         {children}
       </body>
     </html>

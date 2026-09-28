@@ -13,42 +13,45 @@ export default function OpenGraphImage() {
           width: "100%",
           height: "100%",
           display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-between",
-          background: "#FFF8F3",
-          padding: "64px 72px",
-          color: "#2A211C",
+          background:
+            "repeating-linear-gradient(90deg, #7A2D3A 0px, #7A2D3A 46px, #E8CFC9 46px, #E8CFC9 92px)",
+          padding: "56px",
         }}
       >
         <div
           style={{
             display: "flex",
+            flexDirection: "column",
             justifyContent: "space-between",
-            fontSize: 20,
-            color: "#E36B4F",
+            width: "100%",
+            borderRadius: 28,
+            background: "#F6EDD6",
+            color: "#5E2030",
+            padding: "48px 56px",
           }}
         >
-          <span>CRO-SC 18650</span>
-          <span>Blumenau · SC</span>
-        </div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 28 }}>Dra. Isadora Mór Spada</div>
-          <div
-            style={{
-              marginTop: 16,
-              fontSize: 72,
-              lineHeight: 1,
-              maxWidth: 900,
-              fontWeight: 500,
-            }}
-          >
-            Harmonização facial em Blumenau
+          <div style={{ display: "flex", justifyContent: "space-between", fontSize: 22 }}>
+            <span>@draisadoraspada</span>
+            <span>CRO-SC 18650</span>
           </div>
-        </div>
-        <div style={{ display: "flex", gap: 28, fontSize: 22, color: "#746862" }}>
-          <span>Botox</span>
-          <span>LipSense®</span>
-          <span>Mentoria Ilumme</span>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ fontSize: 28 }}>Dra. Isadora Mór Spada</div>
+            <div
+              style={{
+                marginTop: 12,
+                fontSize: 68,
+                lineHeight: 1,
+                maxWidth: 860,
+              }}
+            >
+              Harmonização facial em Blumenau
+            </div>
+          </div>
+          <div style={{ display: "flex", gap: 28, fontSize: 24 }}>
+            <span>Botox</span>
+            <span>LipSense®</span>
+            <span>Mentoria Ilumme</span>
+          </div>
         </div>
       </div>
     ),

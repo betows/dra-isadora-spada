@@ -16,6 +16,8 @@
 /desktop-*.png
 /mobile-*.png
 /about-heading.png
+/ig_*.png
+/joy_*.png
 
 # next.js
 /.next/

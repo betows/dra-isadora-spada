@@ -1,58 +1,267 @@
 @import "tailwindcss";
 
 :root {
-  --paper: #fff8f3;
-  --sand: #f6ece4;
-  --blush: #fde8df;
-  --ink: #2a211c;
-  --muted: #746862;
-  --coral: #e36b4f;
-  --coral-deep: #c6533a;
-  --line: rgb(42 33 28 / 0.1);
+  --wine: #7a2d3a;
+  --wine-deep: #5e2030;
+  --stripe: #e8cfc9;
+  --cream: #f6edd6;
+  --paper: #fff8f2;
+  --ink: #2a181c;
+  --muted: #6e5a5e;
+  --pink: #e7a3b8;
+  --line: rgb(42 24 28 / 0.12);
 }
 
 @theme inline {
+  --color-wine: var(--wine);
+  --color-wine-deep: var(--wine-deep);
+  --color-stripe: var(--stripe);
+  --color-cream: var(--cream);
   --color-paper: var(--paper);
-  --color-sand: var(--sand);
-  --color-blush: var(--blush);
   --color-ink: var(--ink);
   --color-muted: var(--muted);
-  --color-coral: var(--coral);
-  --color-coral-deep: var(--coral-deep);
-  --font-sans: var(--font-manrope), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-display: var(--font-fraunces), "Iowan Old Style", Palatino, serif;
+  --color-pink: var(--pink);
+  --font-sans: var(--font-nunito), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-coiny), "Arial Rounded MT Bold", "Nunito", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4.75rem;
-  overflow-x: hidden;
+  scroll-padding-top: 4.5rem;
+  overflow-x: clip;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: clip;
   background: var(--paper);
   color: var(--ink);
   font-family: var(--font-sans);
 }
 
 ::selection {
-  background: var(--coral);
-  color: #fff;
+  background: var(--wine);
+  color: var(--cream);
 }
 
 :focus-visible {
-  outline: 2px solid var(--coral);
+  outline: 2px solid var(--wine);
   outline-offset: 3px;
 }
 
 .font-display {
   font-family: var(--font-display);
-  font-optical-sizing: auto;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.stripes {
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--wine) 0 46px,
+    var(--stripe) 46px 92px
+  );
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  height: 4px;
+  width: 100%;
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+  background: var(--pink);
+  pointer-events: none;
+}
+
+.services-meter {
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.sticker {
+  display: inline-block;
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--wine);
+  padding: 0.35rem 0.8rem;
+  font-family: var(--font-display);
+  line-height: 1;
+  box-shadow: 0 8px 0 rgb(94 32 48 / 0.18);
+}
+
+@supports (animation-timeline: scroll()) {
+  .scroll-progress {
+    animation: grow linear both;
+    animation-timeline: scroll(root);
+  }
+
+  .hero-shift {
+    animation: hero-drift linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 80%;
+  }
+
+  .stripe-drift {
+    animation: stripe-move linear both;
+    animation-timeline: view();
+  }
+
+  .star-a,
+  .star-b,
+  .star-c {
+    animation: star-float linear both;
+    animation-timeline: view();
+  }
+
+  .rise {
+    animation: rise linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 45%;
+  }
+
+  .scroll-marquee {
+    animation: marquee-scroll linear both;
+    animation-timeline: view();
+  }
+
+  .star-a {
+    animation-range: cover 0% cover 100%;
+  }
+
+  .star-b {
+    animation-range: cover 20% cover 70%;
+  }
+
+  .star-c {
+    animation-range: cover 0% cover 55%;
+  }
+
+  .stack-card {
+    animation: stack-shrink linear both;
+    animation-timeline: view();
+    animation-range: exit 0% exit 40%;
+  }
+}
+
+@keyframes grow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes hero-drift {
+  to {
+    transform: translateY(-36px) scale(0.96);
+    opacity: 0.35;
+  }
+}
+
+@keyframes stripe-move {
+  to {
+    transform: translate3d(-14%, -8%, 0) scale(1.14);
+  }
+}
+
+@keyframes star-float {
+  from {
+    transform: translate3d(0, 24px, 0) rotate(-10deg);
+  }
+  to {
+    transform: translate3d(12px, -70px, 0) rotate(16deg);
+  }
+}
+
+@keyframes rise {
+  from {
+    transform: translate3d(0, 48px, 0) rotate(-1.5deg);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(8%);
+  }
+  to {
+    transform: translateX(-28%);
+  }
+}
+
+@keyframes h-pan {
+  to {
+    transform: translateX(calc(-100% + 100vw));
+  }
+}
+
+@keyframes stack-shrink {
+  to {
+    transform: scale(0.94);
+  }
+}
+
+@media (min-width: 960px) {
+  @supports (animation-timeline: view()) {
+    .h-scroll {
+      height: 280vh;
+      view-timeline-name: --services;
+      view-timeline-axis: block;
+    }
+
+    .h-pin {
+      position: sticky;
+      top: 0;
+      display: flex;
+      height: 100svh;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .h-track {
+      display: flex;
+      width: max-content;
+      gap: 1.25rem;
+      padding-inline: 6vw;
+      animation: h-pan linear both;
+      animation-timeline: --services;
+      animation-range: entry 100% exit 0%;
+    }
+
+    .services-meter {
+      animation: grow linear both;
+      animation-timeline: --services;
+      animation-range: entry 100% exit 0%;
+    }
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .scroll-progress,
+  .hero-shift,
+  .stripe-drift,
+  .star-a,
+  .star-b,
+  .star-c,
+  .rise,
+  .scroll-marquee,
+  .h-track,
+  .stack-card,
+  .services-meter {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .h-scroll {
+    height: auto;
   }
 }
